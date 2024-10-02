@@ -4,23 +4,23 @@ public class Main {
         // Объявляете переменные для входных данных и
         // параметров программы: начального счёта,
         // суммы пополнения и тп
-        int start_money = 100;
-        int add_sum = 1657;
-        int bonus_money;
-        int total_money;
+        int startMoney = 100;
+        int addSum = 1657;
+        int bonusMoney;
+        int totalMoney;
 
         // Условным оператором проверяете, превысила ли
         // сумма пополнения порог, и для этих двух разных
         // сценариев рассчитываете сумму бонуса и выводите
         // на экран.
-        if (add_sum > 1000) {
-            bonus_money = add_sum / 100;
-            total_money = start_money + bonus_money + add_sum;
+        if (addSum > 1000) {
+            bonusMoney = addSum / 100;
+            totalMoney = startMoney + bonusMoney + addSum;
         } else {
-            total_money = add_sum + start_money;
-            bonus_money = 0;
+            totalMoney = addSum + startMoney;
+            bonusMoney = 0;
         }
-        System.out.println(total_money);
-        System.out.println(bonus_money);
+        System.out.println(totalMoney);
+        System.out.println(bonusMoney);
     }
 }
